@@ -1,0 +1,402 @@
+clube(flamengo).
+clube(palmeiras).
+clube(cruzeiro).
+clube(fortaleza).
+clube(fluminense).
+clube(botafogo).
+clube(bahia).
+clube(saopaulo).
+clube(gremio).
+clube(mirassol).
+clube(bragantino).
+clube(atleticomg).
+clube(santos).
+clube(corinthians).
+clube(vasco).
+clube(juventude).
+clube(vitoria).
+clube(internacional).
+clube(ceara).
+clube(sport).
+
+posicao(flamengo, 1).
+posicao(palmeiras, 2).
+posicao(cruzeiro, 3).
+posicao(fortaleza, 18).
+posicao(fluminense, 5).
+posicao(botafogo, 6).
+posicao(bahia, 7).
+posicao(saopaulo, 8).
+posicao(gremio, 9).
+posicao(mirassol, 4).
+posicao(bragantino, 10).
+posicao(atleticomg, 11).
+posicao(santos, 12).
+posicao(corinthians, 13).
+posicao(vasco, 14).
+posicao(juventude, 19).
+posicao(vitoria, 15).
+posicao(internacional, 16).
+posicao(ceara, 17).
+posicao(sport, 20).
+
+pontos(flamengo, 79).
+pontos(palmeiras, 76).
+pontos(cruzeiro, 70).
+pontos(fortaleza, 43).
+pontos(fluminense, 64).
+pontos(botafogo, 63).
+pontos(bahia, 60).
+pontos(saopaulo, 51).
+pontos(gremio, 49).
+pontos(mirassol, 67).
+pontos(bragantino, 48).
+pontos(atleticomg, 48).
+pontos(santos, 47).
+pontos(corinthians, 47).
+pontos(vasco, 45).
+pontos(juventude, 35).
+pontos(vitoria, 45).
+pontos(internacional, 44).
+pontos(ceara, 43).
+pontos(sport, 17).
+
+libertadoresgrupos(flamengo).
+libertadoresgrupos(palmeiras).
+libertadoresgrupos(cruzeiro).
+libertadoresgrupos(fluminense).
+libertadoresgrupos(corinthians).
+
+libertadoresprevia(botafogo).
+libertadoresprevia(bahia).
+
+sulamericana(saopaulo).
+sulamericana(gremio).
+sulamericana(mirassol).
+sulamericana(bragantino).
+sulamericana(atleticomg).
+sulamericana(santos).
+sulamericana(vasco).
+
+rebaixado(fortaleza).
+rebaixado(juventude).
+rebaixado(ceara).
+rebaixado(sport).
+
+artilheiro(flamengo, arrascaeta).
+artilheiro(palmeiras, vitorroque).
+artilheiro(cruzeiro, kaiojorge).
+artilheiro(fortaleza, lucero).
+artilheiro(fluminense, kevinserna).
+artilheiro(botafogo, igorjesus).
+artilheiro(bahia, willianjose).
+artilheiro(saopaulo, luciano).
+artilheiro(gremio, carlosvinicius).
+artilheiro(mirassol, dellatorre).
+artilheiro(bragantino, jhonjhon).
+artilheiro(atleticomg, hulk).
+artilheiro(santos, alvarobarreal).
+artilheiro(corinthians, yurialberto).
+artilheiro(vasco, vegetti).
+artilheiro(vasco, rayan).
+artilheiro(juventude, lucasbarbosa).
+artilheiro(vitoria, renatokayzer).
+artilheiro(internacional, alanpatrick).
+artilheiro(ceara, pedroraul).
+artilheiro(sport, deriklacerda).
+
+gols(arrascaeta, 18).
+gols(vitorroque, 16).
+gols(kaiojorge, 21).
+gols(lucero, 10).
+gols(kevinserna, 7).
+gols(igorjesus, 12).
+gols(willianjose, 11).
+gols(luciano, 9).
+gols(carlosvinicius, 12).
+gols(dellatorre, 11).
+gols(jhonjhon, 10).
+gols(hulk, 8).
+gols(alvarobarreal, 9).
+gols(yurialberto, 10).
+gols(vegetti, 14).
+gols(rayan, 14).
+gols(lucasbarbosa, 11).
+gols(renatokayzer, 9).
+gols(alanpatrick, 11).
+gols(pedroraul, 11).
+gols(deriklacerda, 6).
+
+assistente(flamengo, arrascaeta).
+assistente(palmeiras, mauricio).
+assistente(cruzeiro, kaiojorge).
+assistente(fortaleza, pochettino).
+assistente(fluminense, kevinserna).
+assistente(botafogo, savarino).
+assistente(bahia, willianjose).
+assistente(bahia, ademir).
+assistente(saopaulo, enzodiaz).
+assistente(gremio, pavon).
+assistente(mirassol, danielzinho).
+assistente(bragantino, jhonjhon).
+assistente(atleticomg, hulk).
+assistente(santos, guilherme).
+assistente(corinthians, matheuzinho).
+assistente(corinthians, memphis).
+assistente(corinthians, rodrigogarro).
+assistente(corinthians, vitinho).
+assistente(vasco, lucaspiton).
+assistente(vasco, paulohenrique).
+assistente(juventude, nene).
+assistente(vitoria, erick).
+assistente(internacional, alanpatrick).
+assistente(ceara, lucasmugni).
+
+assistencias(arrascaeta, 14).
+assistencias(mauricio, 7).
+assistencias(kaiojorge, 8).
+assistencias(pochettino, 6).
+assistencias(kevinserna, 4).
+assistencias(savarino, 8).
+assistencias(willianjose, 6).
+assistencias(ademir, 6).
+assistencias(enzodiaz, 5).
+assistencias(pavon, 6).
+assistencias(danielzinho, 7).
+assistencias(jhonjhon, 7).
+assistencias(hulk, 6).
+assistencias(guilherme, 7).
+assistencias(matheuzinho, 3).
+assistencias(memphis, 3).
+assistencias(rodrigogarro, 3).
+assistencias(vitinho, 3).
+assistencias(lucaspiton, 7).
+assistencias(paulohenrique, 7).
+assistencias(nene, 7).
+assistencias(erick, 5).
+assistencias(alanpatrick, 7).
+assistencias(lucasmugni, 6).
+
+tecnicos(flamengo, [filipeluis]).
+tecnicos(palmeiras, [abelferreira]).
+tecnicos(cruzeiro, [fernandodiniz, wesleycarvalho, leonardojardim]).
+tecnicos(fortaleza, [vojvoda]).
+tecnicos(fluminense, [renatogaucho]).
+tecnicos(botafogo, [arturjorge]).
+tecnicos(bahia, [rogerioceni]).
+tecnicos(saopaulo, [zubeldia, crespo]).
+tecnicos(gremio, [quinteros, manomenezes]).
+tecnicos(mirassol, [mozartsantos, brunopivetti]).
+tecnicos(bragantino, [fernandoseabra, vagnermancini]).
+tecnicos(atleticomg, [cuca, sampaoli]).
+tecnicos(santos, [pedrocaixinha, cesarsampaio, cleberxavier, vojvoda]).
+tecnicos(corinthians, [ramondiaz, dorivaljunior]).
+tecnicos(vasco, [carille, felipeloureiro, fernandodiniz]).
+tecnicos(juventude, [rogermachado, jairventura, fabiomatias]).
+tecnicos(vitoria, [thiagocarpini, carille, rodrigochagas, jairventura]).
+tecnicos(internacional, [rogermachado, ramondiaz, abelbraga]).
+tecnicos(ceara, [leoconde]).
+tecnicos(sport, [pepa, antoniooliveira, danielpaulista, cesarlucena]).
+
+presidente(flamengo, bap).
+presidente(palmeiras, leilapereira).
+presidente(cruzeiro, lidsonpotsch).
+presidente(fortaleza, alexsantiago).
+presidente(fluminense, mariobittencourt).
+presidente(botafogo, durcesiomello).
+presidente(bahia, emersonferretti).
+presidente(saopaulo, juliocasares).
+presidente(gremio, albertoguerra).
+presidente(mirassol, edsonermenegildo).
+presidente(bragantino, naoinformado).
+presidente(atleticomg, sergiocoelho).
+presidente(santos, marceloteixeira).
+presidente(corinthians, osmarstabile).
+presidente(vasco, pedrinho).
+presidente(juventude, fabiopizzamiglio).
+presidente(vitoria, fabiomota).
+presidente(internacional, alessandrobarcellos).
+presidente(ceara, joaopaulosilva).
+presidente(sport, yuriromao).
+
+diretor(flamengo, joseboto).
+diretor(palmeiras, andersonbarros).
+diretor(cruzeiro, paulopelaipe).
+diretor(fortaleza, brunocosta).
+diretor(fluminense, naoconfirmado).
+diretor(botafogo, pedromartins).
+diretor(bahia, carlossantoro).
+diretor(saopaulo, carlosbelmonte).
+diretor(gremio, gutopeixoto).
+diretor(mirassol, juninhoantunes).
+diretor(bragantino, diegocerri).
+diretor(atleticomg, victorbagy).
+diretor(santos, guilhermesousa).
+diretor(corinthians, fabinhosoldado).
+diretor(vasco, admarlopes).
+diretor(juventude, juliorondinelli).
+diretor(vitoria, gustavovieira).
+diretor(internacional, andremazzuco).
+diretor(ceara, lucasdrubscky).
+diretor(sport, enricoambrogini).
+
+master(flamengo, betano).
+master(palmeiras, sportingbet).
+master(cruzeiro, betfair).
+master(fortaleza, novibet).
+master(fluminense, superbet).
+master(botafogo, parimatch).
+master(bahia, vivasortebet).
+master(saopaulo, superbet).
+master(gremio, alfabet).
+master(mirassol, guarani).
+master(bragantino, redbull).
+master(atleticomg, h2bet).
+master(santos, bet7k).
+master(corinthians, esportesdasorte).
+master(vasco, betfair).
+master(juventude, stake).
+master(vitoria, bet7k).
+master(internacional, alfabet).
+master(ceara, esportesdasorte).
+master(sport, betnacional).
+
+patrocinadores(flamengo, [betano, adidas, brb, hapvida, shopee, assistcard, abc, texaco,
+    zedelivery]).
+patrocinadores(palmeiras, [sportingbet, puma, grupofictor, sil, uniasselvi,
+    ditaliapanelas, cimed]).
+patrocinadores(cruzeiro, [betfair, adidas, lavitan, supermercadosbh, vilmaalimentos,
+    mmalugueldecarros, perdigao, multivix, kodilar, cimed, gerdau]).
+patrocinadores(fortaleza, [novibet, voltsport, bancointer, unimedfortaleza]).
+patrocinadores(fluminense, [superbet, umbro, zinzane, frescatto, unig, predialnet,
+    zedelivery]).
+patrocinadores(botafogo, [parimatch, reebok, championwatch, ingressossa]).
+patrocinadores(bahia, [vivasortebet, vivasorte]).
+patrocinadores(saopaulo, [superbet, newbalance, ademicon, elgin, abcdaconstrucao, konami,
+    vivasorte]).
+patrocinadores(gremio, [alfabet, umbro, banrisul, unimed, marquespan, energiabet]).
+patrocinadores(mirassol, [guarani, penalty, bancorendimento, biolab, unimedsjrp, poty]).
+patrocinadores(bragantino, [redbull, puma, betfast, asaas, ambev, arenaev,
+    convemsupermercados, colegiopopulus, pelusosperandio, exxentric, farmax, unimed]).
+patrocinadores(atleticomg, [h2bet, ale, mrv]).
+patrocinadores(santos, [bet7k, umbro, havan, loovi, pleybyney, kicaldo, cancaoalimentos,
+    placo, zedelivery, farmaciasnissei, uniasselvi, vivasorte]).
+patrocinadores(corinthians, [esportesdasorte, nike, appgas, bancobmg, eletricaarea,
+    vivasorte, ezzeseguros, kasinski, unicesumar, zedelivery]).
+patrocinadores(vasco, [betfair, kappa, bancobmg, vivasorte, intermac, r10score]).
+patrocinadores(juventude, [stake, marca19treze, rodoil, unimednordesters, randoncorp]).
+patrocinadores(vitoria, [bet7k, voltsport, fatalmodel]).
+patrocinadores(internacional, [alfabet, adidas, banrisul, unimed, zedelivery]).
+patrocinadores(ceara, [esportesdasorte, vozao, vivasorte, voke, supermercadopinheiro,
+    victaengenharia]).
+patrocinadores(sport, [betnacional, umbro, mouradubeux, hebron, zrobank]).
+
+jogadores(flamengo, [rossi, leopereira, arrascaeta, leoortiz, brunohenrique, luizaraujo,
+    alexsandro, danilo, samuellino, jorginho, plata, varela, emerson, pulgar, ayrtonlucas,
+    saul, pedro, delacruz, wesley, everttonaraujo, cebolinha, carrascal]).
+jogadores(palmeiras, [giay, lomba, flacolopez, facundotorres, mauricio, allan,
+    felipeanderson, piquerez, emilianomartinez, vitorroque, brunofuchs, micael,
+    anibalmoreno, gustavogomez, veiga, murilo, weverton, ramonsosa, luighi,
+    lucasevangelista, jefte, benedetti]).
+jogadores(cruzeiro, [cassio, kaikibruno, matheuspereira, lucassilva, fabriciobruno,
+    kaiojorge, lucasromero, villalba, christian, william, gabrielbarbosa, carloseduardo,
+    wanderson, bolasie, matheushenrique, walace, marquinhos, jonathanjesus, kenyarroyo,
+    sinisterra, fagner, kauaprates]).
+jogadores(fortaleza, [joaoricardo, lucero, pochettino, britez, titi, brenolopes,
+    yagopikachu, tinga, lucassasha, brunopacheco, hercules, zewelison, felipejonatan,
+    kuscevic, marinho, pedroaugusto, machuca, moises, kozlinski, renatokayzer,
+    kervinandrade, erosmancuso]).
+jogadores(fluminense, [fabio, samuelxavier, thiagosilva, ignacio, facundobernal, rene,
+    hercules, martinelli, everaldo, ganso, keno, gabrielfuentes, guga, germancano, nonato,
+    canobbio, lima, kevinserna, juanfreytes, thiagosantos, johnkennedy, soteldo]).
+jogadores(botafogo, [john, marlonfreitas, savarino, gregore, barboza, igorjesus, cuiabano,
+    bastos, luizhenrique, mateoponte, tchetche, halter, tiquinhosoares, vitinho, gatito,
+    carloseduardo, marcal, almada, juniorsantos, danilobarbosa, allan, matheusmartins]).
+jogadores(bahia, [lucianojuba, jeanlucas, willianjose, santiagomingo, acevedo,
+    evertonribeiro, ademir, cauly, ronaldo, kayky, tiago, davidduarte, michelaraujo,
+    erickpulga, gilberto, rodrigonestor, santiagoarias, caioalexandre, lucianorodriguez,
+    erick, iagoborduchi, gabrielxavier]).
+jogadores(saopaulo, [sabino, negrucci, rafael, bobadilla, alanfranco, ferraresi, luciano,
+    cedric, alisson, ferreira, patryck, marcosantonio, pablomaia, enzodiaz, arboleda,
+    rodrigo, wendell, tapia, young, andresilva, luccamarques, lucasferreira]).
+jogadores(gremio, [volpi, gabrielgrando, marlon, wagnerleonardo, dodi, edenilson, alysson,
+    cristaldo, pavon, braithwaite, gustavomartins, cuellar, villasanti, amuzu, aravena,
+    olivera, andrehenrique, kannemann, joaolucas, marcosrocha, monsalve, carlosvinicius]).
+jogadores(mirassol, [alexmuralha, danielzinho, lucasramon, luizotavio, gabriel,
+    dellatorre, joaovictor, fernandinho, zeroberto, chicokim, zeca, isaque, walter, henri,
+    negueba, yurycastilho, wanderson, netomoura, gazal, alexsilva, ph, cristian]).
+jogadores(bragantino, [cleiton, jhonjhon, lucasbarbosa, gabriel, eduardosasha,
+    pedrohenrique, ericramires, hurtado, juninhocapixaba, guzmanrodriguez, isidropitta,
+    vinicinho, laquintana, matheusfernandes, nathanmendes, borbas, mosquera, gustavinho,
+    praxedes, gustavomarques, vanderlan, fabinho]).
+jogadores(atleticomg, [everson, natanael, junioralonso, lyanco, arana, saravia,
+    alanfranco, faustovera, scarpa, igorgomes, bernard, gabrielmenino, alexsander, cuello,
+    hulk, rony, dudu, juniorsantos, vitorhugo, ruan, ivanroman, reinier]).
+jogadores(santos, [brazao, rollheiser, alvarobarreal, guilherme, joaoschmidt, escobar,
+    zerafael, tiquinhosoares, souza, luanperes, zeivaldo, neymar, igorvinicius, thaciano,
+    rincon, deividwashington, lautarodiaz, gabrielbontempo, joaobasso, pituca,
+    willianarao, robinhojr]).
+jogadores(corinthians, [tallesmagno, angelromero, caca, joaopedro, brenobidon,
+    matheusbidu, angileri, felixtorres, matheuzinho, raniele, andreramalho, charles,
+    felipelongo, ryangustavo, maycon, hugosouza, yurialberto, gustavohenrique, guinegao,
+    martinez, dieguinho, carrillo]).
+jogadores(vasco, [leojardim, nunomoreira, vegetti, rayan, hugomoura, lucaspiton, coutinho,
+    tchetche, paulohenrique, pumarodriguez, david, lucasfreitas, mateuscarvalho, barros,
+    joaovictor, andresgomez, matheusfranca, robertrenan, carloscuesta, adson, jair,
+    paulinho]).
+jogadores(juventude, [gabrielvasconcelos, lucasbarbosa, jadson, erickfarias, daniloboza,
+    alanruschel, nene, zemarcos, lucasfreitas, joaolucas, ewerthon, jeancarlos, oyama,
+    marcelinho, mandaca, rodrigosam, gabrielinocencio, gilberto, mateusclaus, carrillo,
+    daviddahora, thiaguinho]).
+jogadores(vitoria, [lucasarcanjo, lucashalter, ronaldo, baralhas, matheuzinho, osvaldo,
+    zemarcos, raulcaceres, ronald, willianoliveira, erick, renatokayzer, fabri, carlinhos,
+    gustavomosquito, claudinho, neris, edu, pepe, ricardoryller, lucasbraga, renzolopez]).
+jogadores(internacional, [vitao, thiagomaia, alanpatrick, bernabei, aguirre, borre,
+    brunohenrique, vitinho, tabata, carbonero, ricardomathias, juninho, luisotavio,
+    anthoni, wesley, oscarromero, rochet, alanrodriguez, ronaldo, mercado, victorgabriel,
+    ennervalencia]).
+jogadores(ceara, [willianmachado, galeano, fabianosouza, pedroraul, brunoferreira,
+    dieguinho, matheusbahia, marllon, lucasmugni, fernandosobral, lourenco, pedrohenrique,
+    marcosvictor, zanocelo, fernandinho, rafaelramos, aylon, richardson, fernandomiguel,
+    nicolas, vinicius, paulobaya]).
+jogadores(sport, [christianrivera, lucaslima, rafaelthyere, gabriel, ramonmenezes,
+    matheusalexandre, igorcarius, matheusinho, zelucas, barletta, deriklacerda,
+    caiquefranca, luancandido, leopereira, chico, pablo, sergiooliveira, joaosilva,
+    aderlan, romarinho, lucaskal, diogohereda]).
+
+campeao(flamengo).
+vicecampeao(palmeiras).
+artilheirogeral(kaiojorge, cruzeiro).
+maiorassistente(arrascaeta, flamengo).
+melhorjogador(arrascaeta, flamengo).
+melhorgoleiro(rossi, flamengo).
+revelacao(rayan, vasco).
+melhortreinador(rafaelguanaes, mirassol).
+golmaisbonito(pedro, flamengo).
+maiorgoleada(flamengo, 8, vitoria, 0).
+melhorataque(flamengo).
+melhordefesa(flamengo).
+
+tecnico(T, X) :- tecnicos(T, L), member(X, L).
+patrocinador(T, M) :- patrocinadores(T, L), member(M, L).
+joga(J, T) :- jogadores(T, L), member(J, L).
+libertadores(T) :- libertadoresgrupos(T).
+libertadores(T) :- libertadoresprevia(T).
+vaga_internacional(T) :- libertadores(T).
+vaga_internacional(T) :- sulamericana(T).
+nada(T) :- clube(T), \+ vaga_internacional(T), \+ rebaixado(T).
+acima(X, Y) :- posicao(X, P), posicao(Y, Q), P < Q.
+maispontos(X, Y) :- pontos(X, P), pontos(Y, Q), P > Q.
+empatados(X, Y) :- pontos(X, P), pontos(Y, P), X \= Y.
+g4(T) :- posicao(T, P), P =< 4.
+seguinte(X, Y) :- posicao(X, P), posicao(Y, Q), Q is P + 1.
+abaixo(X, Y) :- seguinte(X, Y).
+abaixo(X, Y) :- seguinte(X, Z), abaixo(Z, Y).
+jogadordocampeao(J) :- campeao(T), joga(J, T).
+artilheirodocampeao(J) :- campeao(T), artilheiro(T, J).
+artilheirodorebaixado(J) :- rebaixado(T), artilheiro(T, J).
+artilheiroegarcom(J) :- artilheiro(T, J), assistente(T, J).
+colega(X, Y) :- joga(X, T), joga(Y, T), X \= Y.
+trocoutecnico(T) :- tecnico(T, X), tecnico(T, Y), X \= Y.
+tecnicoemdoistimes(X) :- tecnico(A, X), tecnico(B, X), A \= B.
+mesmopatrocinador(A, B, M) :- patrocinador(A, M), patrocinador(B, M), A \= B.
