@@ -340,7 +340,11 @@ vaga_internacional(T) :- sulamericana(T).
 nada(T) :- clube(T), \+ vaga_internacional(T), \+ rebaixado(T).
 acima(X, Y) :- posicao(X, P), posicao(Y, Q), P < Q.
 maispontos(X, Y) :- pontos(X, P), pontos(Y, Q), P > Q.
-empatados(X, Y) :- pontos(X, P), pontos(Y, Q), P \= Y.
+empatados(X, Y) :-
+    pontos(X, P),
+    pontos(Y, Q),
+    X \= Y,
+    P =:= Q.
 g4(T) :- posicao(T, P), P =< 4.
 seguinte(X, Y) :- posicao(X, P), posicao(Y, Q), Q is P + 1.
 abaixo(X, Y) :- seguinte(X, Y).
