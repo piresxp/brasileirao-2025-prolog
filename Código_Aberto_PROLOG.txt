@@ -182,7 +182,7 @@ tecnicos(palmeiras, [abelferreira]).
 tecnicos(cruzeiro, [fernandodiniz, wesleycarvalho, leonardojardim]).
 tecnicos(fortaleza, [vojvoda]).
 tecnicos(fluminense, [renatogaucho]).
-tecnicos(botafogo, [arturjorge]).
+tecnicos(botafogo, [renatopaiva, claudiocacapa, davideancelotti]).
 tecnicos(bahia, [rogerioceni]).
 tecnicos(saopaulo, [zubeldia, crespo]).
 tecnicos(gremio, [quinteros, manomenezes]).
@@ -291,7 +291,7 @@ jogadores(botafogo, [john, marlonfreitas, savarino, gregore, barboza, igorjesus,
 jogadores(bahia, [lucianojuba, jeanlucas, willianjose, santiagomingo, acevedo, evertonribeiro, ademir, cauly, ronaldo, kayky, tiago, davidduarte, michelaraujo, erickpulga, gilberto, rodrigonestor, santiagoarias, caioalexandre, lucianorodriguez, erick, iagoborduchi, gabrielxavier]).
 jogadores(saopaulo, [sabino, negrucci, rafael, bobadilla, alanfranco, ferraresi, luciano, cedric, alisson, ferreira, patryck, marcosantonio, pablomaia, enzodiaz, arboleda, rodrigo, wendell, tapia, young, andresilva, luccamarques, lucasferreira]).
 jogadores(gremio, [volpi, gabrielgrando, marlon, wagnerleonardo, dodi, edenilson, alysson, cristaldo, pavon, braithwaite, gustavomartins, cuellar, villasanti, amuzu, aravena, olivera, andrehenrique, kannemann, joaolucas, marcosrocha, monsalve, carlosvinicius]).
-jogadores(mirassol, [alexmuralha, danielzinho, lucasramon, luizotavio, gabriel, dellatorre, joaovictor, fernandinho, zeroberto, chicokim, zeca, isaque, walter, henri, negueba, yurycastilho, wanderson, netomoura, gazal, alexsilva, ph, cristian]).
+jogadores(mirassol, [reinaldo, alexmuralha, danielzinho, lucasramon, luizotavio, gabriel, dellatorre, joaovictor, fernandinho, zeroberto, chicokim, zeca, isaque, walter, henri, negueba, yurycastilho, wanderson, netomoura, gazal, alexsilva, ph, cristian]).
 jogadores(bragantino, [cleiton, jhonjhon, lucasbarbosa, gabriel, eduardosasha, pedrohenrique, ericramires, hurtado, juninhocapixaba, guzmanrodriguez, isidropitta, vinicinho, laquintana, matheusfernandes, nathanmendes, borbas, mosquera, gustavinho, praxedes, gustavomarques, vanderlan, fabinho]).
 jogadores(atleticomg, [everson, natanael, junioralonso, lyanco, arana, saravia, alanfranco, faustovera, scarpa, igorgomes, bernard, gabrielmenino, alexsander, cuello, hulk, rony, dudu, juniorsantos, vitorhugo, ruan, ivanroman, reinier]).
 jogadores(santos, [brazao, rollheiser, alvarobarreal, guilherme, joaoschmidt, escobar, zerafael, tiquinhosoares, souza, luanperes, zeivaldo, neymar, igorvinicius, thaciano, rincon, deividwashington, lautarodiaz, gabrielbontempo, joaobasso, pituca, willianarao, robinhojr]).
@@ -316,7 +316,6 @@ maiorgoleada(flamengo, 8, vitoria, 0).
 melhorataque(flamengo).
 melhordefesa(flamengo).
 
-
 melhor_goleiro_selecao(rossi, flamengo).
 melhor_zagueiro_selecao(leopereira, flamengo).
 melhor_zagueiro_selecao(fabriciobruno, cruzeiro).
@@ -329,35 +328,45 @@ melhor_meia_selecao(matheuspereira, cruzeiro).
 melhor_atacante_selecao(vitorroque, palmeiras).
 melhor_atacante_selecao(kaiojorge, cruzeiro).
 
-
 tecnico(T, X) :- tecnicos(T, L), member(X, L).
 patrocinador(T, M) :- patrocinadores(T, L), member(M, L).
 joga(J, T) :- jogadores(T, L), member(J, L).
+
 libertadores(T) :- libertadoresgrupos(T).
 libertadores(T) :- libertadoresprevia(T).
 vaga_internacional(T) :- libertadores(T).
 vaga_internacional(T) :- sulamericana(T).
 nada(T) :- clube(T), \+ vaga_internacional(T), \+ rebaixado(T).
+
 acima(X, Y) :- posicao(X, P), posicao(Y, Q), P < Q.
 maispontos(X, Y) :- pontos(X, P), pontos(Y, Q), P > Q.
+
 empatados(X, Y) :-
     pontos(X, P),
     pontos(Y, Q),
     X \= Y,
     P =:= Q.
+
 g4(T) :- posicao(T, P), P =< 4.
 seguinte(X, Y) :- posicao(X, P), posicao(Y, Q), Q is P + 1.
+
 abaixo(X, Y) :- seguinte(X, Y).
 abaixo(X, Y) :- seguinte(X, Z), abaixo(Z, Y).
+
 jogadordocampeao(J) :- campeao(T), joga(J, T).
 artilheirodocampeao(J) :- campeao(T), artilheiro(T, J).
 artilheirodorebaixado(J) :- rebaixado(T), artilheiro(T, J).
-artilheiroegarcom(J) :- artilheiro(T, J), assistente(T, J).
+
+artilheiro_e_assistente(J) :-
+    artilheiro(T, J),
+    assistente(T, J).
+
+artilheiroegarcom(J) :- artilheiro_e_assistente(J).
+
 colega(X, Y) :- joga(X, T), joga(Y, T), X \= Y.
 trocoutecnico(T) :- tecnico(T, X), tecnico(T, Y), X \= Y.
 tecnicoemdoistimes(X) :- tecnico(A, X), tecnico(B, X), A \= B.
 mesmopatrocinador(A, B, M) :- patrocinador(A, M), patrocinador(B, M), A \= B.
-
 
 melhor_elenco(Elenco) :-
     findall(G-C, melhor_goleiro_selecao(G, C), Goleiros),
